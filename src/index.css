@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
+/*  
+
+COLORS
+#49392C - dark brown
+#F64740 - red
+#E1F2FE - light blue
+
+*/
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;

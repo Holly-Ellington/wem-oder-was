@@ -1,7 +1,7 @@
 import React from 'react'
 import VocabWord from './VocabWord'
 
-function VocabList({vocab}) {
+function VocabList({vocab, handleCardDelete}) {
     console.log(vocab);
 
   return (
@@ -14,6 +14,7 @@ function VocabList({vocab}) {
                     word={word.word}
                     partOfSpeech={word.partOfSpeech}
                     gender={word.gender}
+                    handleCardDelete={handleCardDelete}
                 /> 
             ))}
         </div>
