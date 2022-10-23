@@ -1,11 +1,20 @@
 import React from 'react'
+import { FaTrash } from 'react-icons/fa'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function VocabWord({article,word, id}) {
+
+function VocabWord({article,word, id, partOfSpeech, gender}) {
   return (
     <>
     <div key={id} className="card">
-        <div>{article}</div>
-        <h4>{word}</h4>
+        <div>
+            <h4>{article} {word} ({gender}) [{partOfSpeech}]</h4>
+            <button className='card-btn'>
+                <FaTrash color='#F64740' className='fa-xl' />
+            </button>
+                  
+        </div>
+        
     </div>
     </>
   )

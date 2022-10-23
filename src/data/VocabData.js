@@ -4,24 +4,27 @@ const VocabData = [
         article: 'das',
         word: 'Neues Wort',
         partOfSpeech: 'noun',
-        gender: 'neutral',
-        case: 'nominative'
+        gender: 'n',
+        case: 'nominative', 
+        meaning: 'the new word'
     },
     {
         id: 2,
         article: 'die',
         word: 'Sonne',
         partOfSpeech: 'noun',
-        gender: 'feminine',
-        case: 'nominative'
+        gender: 'f',
+        case: 'nominative', 
+        meaning: 'the sun'
     },
     {
         id: 3,
         article: 'der',
         word: 'Kaffee',
         partOfSpeech: 'noun',
-        gender: 'masucline',
-        case: 'nominative'
+        gender: 'm',
+        case: 'nominative', 
+        meaning: 'the coffee'
     },
 ]
 

@@ -12,6 +12,8 @@ function VocabList({vocab}) {
                     id={word.id}
                     article={word.article}
                     word={word.word}
+                    partOfSpeech={word.partOfSpeech}
+                    gender={word.gender}
                 /> 
             ))}
         </div>
