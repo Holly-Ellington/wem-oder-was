@@ -28,7 +28,6 @@ body {
 .App {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 ul {
@@ -64,11 +63,13 @@ ul {
   color: #333;
   border-radius: 15px;
   padding: 40px 50px;
-  margin: 20px 10px;
+  margin: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+
 }
 
 .card-contents {
@@ -106,5 +107,25 @@ ul {
 
 }
 
+
+/*  conditional styling */
+
+.fem {
+  text-decoration: underline;
+  text-decoration-color: rgb(237, 81, 133);
+  text-decoration-thickness: 4px;
+}
+
+.masc {
+  text-decoration: underline;
+  text-decoration-color: rgb(58, 78, 228);
+  text-decoration-thickness: 4px;
+}
+
+.neut {
+  text-decoration: underline;
+  text-decoration-color: rgb(57, 123, 66);
+  text-decoration-thickness: 4px;
+}
 
 

@@ -13,7 +13,7 @@ function VocabWord({article, word, id, partOfSpeech, gender, handleCardDelete, m
             <FaTrash color='#F64740' className='fa-xl' />
         </button> 
         <div className='card-contents'>
-        <h3><span className='article-span'>{article}</span> <span className='article-span'>{word}</span></h3>
+        <h3 className={`${gender === 'f' && 'fem'} ${gender === 'm' && 'masc'} ${gender === 'n' && 'neut'} `}><span className='article-span'>{article}</span> <span className='article-span'>{word}</span></h3>
         <div><span>{gender}</span> • <span>{partOfSpeech}</span></div>
         <p>{meaning}</p>
      
