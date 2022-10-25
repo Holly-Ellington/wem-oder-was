@@ -3,16 +3,20 @@ import { FaTrash } from 'react-icons/fa'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-function VocabWord({article,word, id, partOfSpeech, gender, handleCardDelete}) {
+// next steps: conditional styling based on gender and partOfSpeech
+
+function VocabWord({article, word, id, partOfSpeech, gender, handleCardDelete, meaning}) {
   return (
     <>
     <div key={id} className="card">
-        <div>
-            <h4>{article} {word} ({gender}) [{partOfSpeech}]</h4>
-            <button className='card-btn' onClick={()=>{handleCardDelete(id)}}>
-                <FaTrash color='#F64740' className='fa-xl' />
-            </button>
-                  
+        <button className='card-btn' onClick={()=>{handleCardDelete(id)}}>
+            <FaTrash color='#F64740' className='fa-xl' />
+        </button> 
+        <div className='card-contents'>
+        <h3><span className='article-span'>{article}</span> <span className='article-span'>{word}</span></h3>
+        <div><span>{gender}</span> • <span>{partOfSpeech}</span></div>
+        <p>{meaning}</p>
+     
         </div>
         
     </div>
