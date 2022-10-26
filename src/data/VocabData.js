@@ -1,3 +1,7 @@
+// POTENTIAL APIS:
+// https://linguatools.org/language-apis/linguatools-translate-api/
+
+
 const VocabData = [
     {
         id: 1,
