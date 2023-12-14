@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun German vocabular app, just for fun! 
 
 ## Available Scripts
 
